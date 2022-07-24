@@ -143,9 +143,9 @@ main {
     cursor: pointer;
 }
 
-.producao:hover {
+.producao:hover, .alterar:hover {
     background: var(--main-preto);
-    color: var(--main-branco)
+    color: var(--main-branco);
 }
 
 
@@ -207,6 +207,32 @@ main {
     order: 1;
     flex-basis: 35%;
     margin: 10px 0 0;
+}
+
+/****************************** Botões de Alterar Cores *****/
+.alterar {
+    margin: 2px;
+    width: 165px;
+    height: 30px;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.2em;
+    border: 3px solid var(--main-branco);
+    background: var(--main-branco);
+    clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);
+    cursor: pointer;
+}
+
+.botoes {
+   position: absolute;
+   right: 55%;
+   top: 90%;
+   height: 30px;
+   display: flex;
+   z-index: 2;
+}
+
+.botoes-container {
+    width: 600px;
 }
 
 @media screen and (max-width: 1600px) {
